@@ -1,0 +1,5 @@
+CREATE TABLE map 
+(  
+    map_id INTEGER PRIMARY KEY AUTO_INCREMENT,
+    map_name VARCHAR(45) NOT NULL 
+)

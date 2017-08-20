@@ -1,0 +1,11 @@
+CREATE TABLE position 
+(  
+    pos_id INTEGER PRIMARY KEY AUTO_INCREMENT,     
+    map_id INTEGER NOT NULL,     
+    x INTEGER NOT NULL,     
+    y INTEGER NOT NULL,     
+    added TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,     
+    FOREIGN KEY (map_id)    
+    REFERENCES map(map_id)         
+    ON DELETE CASCADE ON UPDATE CASCADE 
+)

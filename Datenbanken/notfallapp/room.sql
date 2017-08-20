@@ -1,0 +1,8 @@
+CREATE TABLE ROOM 
+(  
+    room_id INTEGER PRIMARY KEY AUTO_INCREMENT,     
+    room_name VARCHAR(45) NOT NULL,     
+    map_id INTEGER NOT NULL,     
+    FOREIGN KEY (map_id) REFERENCES map(map_id)     
+    ON DELETE CASCADE ON UPDATE CASCADE 
+)
